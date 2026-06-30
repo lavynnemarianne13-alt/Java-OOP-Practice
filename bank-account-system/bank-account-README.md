@@ -1,6 +1,6 @@
 # Bank Account System
 
-A console-based banking system built in Java to practice constructors, constructor overloading, `this`, and encapsulation — with an emphasis on protecting object state through business rules rather than public setters.
+A console-based banking system built in Java to practice constructors, constructor overloading, `this`, and encapsulation with an emphasis on protecting object state through business rules rather than public setters.
 
 This project is part of a structured Java/OOP study path, focused on applying concepts to realistic business-rule scenarios rather than isolated syntax exercises.
 
@@ -10,7 +10,7 @@ The program manages two bank accounts and lets the user perform deposits, withdr
 
 Each account enforces real banking constraints:
 
-- An account's **number is immutable** — set once at creation and never changed (`final` field, no setter).
+- An account's **number is immutable** set once at creation and never changed (`final` field, no setter).
 - The **holder's name can be changed** (e.g. after a legal name change), but the **balance cannot be set directly** — it can only be modified through `deposit`, `withdraw`, and `transferTo`.
 - **Deposits** are only accepted for positive amounts; zero or negative values are rejected.
 - **Withdrawals** charge a fixed $5.00 fee and *can* leave the account with a negative balance if funds are insufficient to cover the fee.
@@ -18,36 +18,36 @@ Each account enforces real banking constraints:
 
 ## Key Concepts Demonstrated
 
-- **Constructor overloading** — `BankAccount(number, holder)` for accounts with no initial deposit, and `BankAccount(number, holder, initialDeposit)` for accounts that start with funds. The second constructor calls the first via `this(...)`, then reuses `deposit()` to apply the initial value — avoiding duplicated logic.
-- **Encapsulation** — `balance` has no public setter. The only way to change it is through methods that enforce business rules.
-- **`final` fields** — the account number is declared `final`, making immutability a compiler-enforced guarantee, not just a convention.
-- **Object collaboration** — `transferTo(BankAccount other, double amount)` modifies the state of two different instances in a single operation.
-- **Control flow** — the main program uses a `do/while` menu loop, a `switch` for operation selection, and a `while` loop to keep prompting the user until a valid initial deposit value is entered.
+- **Constructor overloading**  `BankAccount(number, holder)` for accounts with no initial deposit, and `BankAccount(number, holder, initialDeposit)` for accounts that start with funds. The second constructor calls the first via `this(...)`, then reuses `deposit()` to apply the initial value — avoiding duplicated logic.
+- **Encapsulation**  `balance` has no public setter. The only way to change it is through methods that enforce business rules.
+- **`final` fields** the account number is declared `final`, making immutability a compiler-enforced guarantee, not just a convention.
+- **Object collaboration** `transferTo(BankAccount other, double amount)` modifies the state of two different instances in a single operation.
+- **Control flow** the main program uses a `do/while` menu loop, a `switch` for operation selection, and a `while` loop to keep prompting the user until a valid initial deposit value is entered.
 
 ## Class Diagram
 
 ```
-┌──────────────────────────────────────────┐
-│                BankAccount                │
-├──────────────────────────────────────────┤
-│ - number : final int                      │
-│ - holder : String                         │
-│ - balance : double                        │
-├──────────────────────────────────────────┤
-│ + deposit(amount: double) : void           │
-│ + withdraw(amount: double) : void          │
+┌─────────────────────────────────────────────────────────┐
+│                       BankAccount                       │
+├─────────────────────────────────────────────────────────┤
+│ - number : final int                                    │
+│ - holder : String                                       │
+│ - balance : double                                      │
+├─────────────────────────────────────────────────────────┤
+│ + deposit(amount: double) : void                        │
+│ + withdraw(amount: double) : void                       │
 │ + transferTo(other: BankAccount, amount: double) : void │
-│ + getHolder() : String                     │
-│ + setHolder(holder: String) : void          │
-│ + getNumber() : int                        │
-└──────────────────────────────────────────┘
+│ + getHolder() : String                                  │
+│ + setHolder(holder: String) : void                      │
+│ + getNumber() : int                                     │
+└─────────────────────────────────────────────────────────┘
 ```
 
 ## How to Run
 
 ```bash
-javac ContaBancaria.java BankAccount.java
-java ContaBancaria
+javac Bank.java BankAccount.java
+java Bank
 ```
 
 ## Sample Run
@@ -84,11 +84,10 @@ Account: 1002, Holder: Bob, Balance: 200.00
 ```
 bank-account-system/
 ├── README.md
-├── ContaBancaria.java   # entry point — handles I/O and the operations menu
-└── BankAccount.java      # domain class — encapsulates all account rules
+├── Bank.java  # entry point — handles I/O and the operations menu
+└── BankAccount.java  # domain class — encapsulates all account rules
 ```
 
-## Possible Improvements
 
 - Replace the linear `(accNumber == bankaccount1.getNumber()) ? bankaccount1 : bankaccount2` lookup with a `List<BankAccount>` to support an arbitrary number of accounts.
 - Add unit tests (JUnit) covering edge cases: insufficient balance on withdrawal vs. transfer, self-transfer rejection, deposit with non-positive values.
