@@ -1,6 +1,6 @@
 # Java OOP Practice
 
-*[Read in English](./README.md)*
+*[Read in English/Leia em inglês](https://github.com/lavynnemarianne13-alt/Java-OOP-Practice/blob/main/README.md)*
 
 Uma coleção de exercícios em Java desenvolvidos durante o estudo de fundamentos de Programação Orientada a Objetos, como parte de uma trilha de aprendizado estruturada de 24 meses em direção a um cargo de DevSecOps / Cloud Security Engineer no mercado internacional de trabalho.
 
@@ -37,9 +37,7 @@ Consulte o README de cada projeto para o nome exato da classe principal e um exe
 
 ## Sobre Esta Trilha
 
-Sou estudante de Engenharia de Software em transição para DevSecOps e Cloud Security, construindo uma base em Java antes de avançar para Linux, Docker, CI/CD e ferramentas voltadas à segurança. Este repositório acompanha a parte inicial e fundamental dessa trilha — o restante do roadmap (plataformas de nuvem, conteinerização, certificações de segurança) está sendo construído em paralelo e vai aparecer em repositórios futuros.
-
-## Roadmap (próximas adições)
+Sou estudante de Engenharia de Software em transição para DevSecOps e Cloud Security, construindo uma base em Java antes de avançar para Linux, Docker, CI/CD e ferramentas voltadas à segurança. Este repositório acompanha a parte inicial e fundamental dessa trilha —o restante do roadmap (plataformas de nuvem, conteinerização, certificações de segurança) está sendo construído em paralelo e vai aparecer em repositórios futuros.
 
 - [ ] Sistema de gestão de funcionários (List, lógica de aumento salarial encapsulada)
 - [ ] Sistema de catálogo de produtos (comparação entre arrays e listas)
