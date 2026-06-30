@@ -1,6 +1,6 @@
 # Bank Account System
 
-*[Read in English](./README.md)*
+*[Read in English/Leia em inglês](https://github.com/lavynnemarianne13-alt/Java-OOP-Practice/blob/main/bank-account-system/bank-account-README.md)*
 
 Um sistema bancário via console construído em Java para praticar construtores, sobrecarga de construtores, `this` e encapsulamento — com ênfase em proteger o estado do objeto através de regras de negócio, em vez de setters públicos.
 
@@ -29,27 +29,27 @@ Cada conta aplica restrições reais de um sistema bancário:
 ## Diagrama de Classe
 
 ```
-┌──────────────────────────────────────────┐
-│                BankAccount                │
-├──────────────────────────────────────────┤
-│ - number : final int                      │
-│ - holder : String                         │
-│ - balance : double                        │
-├──────────────────────────────────────────┤
-│ + deposit(amount: double) : void           │
-│ + withdraw(amount: double) : void          │
-│ + transferTo(other: BankAccount, amount: double) : void │
-│ + getHolder() : String                     │
-│ + setHolder(holder: String) : void          │
-│ + getNumber() : int                        │
-└──────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────┐
+│                          BankAccount                         │
+├──────────────────────────────────────────────────────────────┤
+│ - number : final int                                         │
+│ - holder : String                                            │
+│ - balance : double                                           │
+├──────────────────────────────────────────────────────────────┤
+│ + deposit(amount: double) : void                             │
+│ + withdraw(amount: double) : void                            │
+│ + transferTo(other: BankAccount, amount: double) : void      │
+│ + getHolder() : String                                       │
+│ + setHolder(holder: String) : void                           │
+│ + getNumber() : int                                          │
+└──────────────────────────────────────────────────────────────┘
 ```
 
 ## Como Executar
 
 ```bash
-javac ContaBancaria.java BankAccount.java
-java ContaBancaria
+javac Bank.java BankAccount.java
+java Bank
 ```
 
 ## Exemplo de Execução
@@ -87,11 +87,10 @@ Account: 1002, Holder: Bob, Balance: 200.00
 bank-account-system/
 ├── README.md
 ├── README.pt-br.md
-├── ContaBancaria.java   # ponto de entrada — lida com I/O e o menu de operações
+├── Bank.java   # ponto de entrada — lida com I/O e o menu de operações
 └── BankAccount.java      # classe de domínio — encapsula todas as regras da conta
 ```
 
-## Possíveis Melhorias
 
 - Substituir a busca linear `(accNumber == bankaccount1.getNumber()) ? bankaccount1 : bankaccount2` por uma `List<BankAccount>` para suportar um número arbitrário de contas.
 - Adicionar testes unitários (JUnit) cobrindo casos extremos: saldo insuficiente em saque vs. transferência, rejeição de autotransferência, depósito com valores não positivos.
