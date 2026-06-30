@@ -1,6 +1,6 @@
 # RPG Combat System
 
-*[Read in English](./README.md)*
+*[Read in English/Leia em inglês](https://github.com/lavynnemarianne13-alt/Java-OOP-Practice/blob/main/README.md)*
 
 Um simulador de combate por turnos construído em Java para praticar princípios fundamentais de Programação Orientada a Objetos: construtores, encapsulamento e colaboração entre objetos da mesma classe.
 
@@ -23,7 +23,6 @@ Quando um mago lança um feitiço, a relação elemental determina se o feitiço
 - **Programação defensiva / regras de negócio**:
   - Um feitiço custa 10 de mana. Se o lançador não tiver mana suficiente, o feitiço falha silenciosamente — nenhuma mana é gasta e nenhum dano é causado.
   - A vida de um mago nunca pode ficar abaixo de zero, independentemente do dano causado.
-  - `restoreMana` só aceita valores positivos; valores zero ou negativos são rejeitados.
 - **Estruturas de controle** — o loop de combate usa `for` para iterar os turnos (com saída antecipada via `break` quando um mago é derrotado), `if/else` para alternar qual mago ataca, e `while` para validar a entrada do usuário na etapa de restauração de mana.
 
 ## Diagrama de Classe
@@ -65,8 +64,6 @@ Name: Gandalf
 Element: EARTH
 Mana: 50
 Damage: 15
-
-Restore mana for Merlin? Enter amount (0 to skip): 0
 
 How many turns? 3
 
