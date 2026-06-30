@@ -1,5 +1,7 @@
 # Bank Account System
 
+*[Leia em português/Read in Portuguese](https://github.com/lavynnemarianne13-alt/Java-OOP-Practice/blob/main/bank-account-system/bank-README.pt-br.md)*
+
 A console-based banking system built in Java to practice constructors, constructor overloading, `this`, and encapsulation with an emphasis on protecting object state through business rules rather than public setters.
 
 This project is part of a structured Java/OOP study path, focused on applying concepts to realistic business-rule scenarios rather than isolated syntax exercises.
