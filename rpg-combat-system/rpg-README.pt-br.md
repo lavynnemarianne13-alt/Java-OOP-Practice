@@ -95,8 +95,3 @@ rpg-combat-system/
 └── Wizard.java     # classe de domínio — encapsula todas as regras de combate
 ```
 
-## Possíveis Melhorias
-
-- Extrair a lógica de relação elemental para um `enum` com um método dedicado, em vez de comparações encadeadas com `if/else`.
-- Adicionar testes unitários (JUnit) cobrindo casos extremos: mana insuficiente, limite de vida em zero, confrontos do mesmo elemento.
-- Suportar mais de dois combatentes.
