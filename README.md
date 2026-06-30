@@ -1,6 +1,6 @@
 # Java OOP Practice 
 
-*[Read in Portuguese](./README.pt-br.md)*
+*[Read in Portuguese/Leia em português](https://github.com/lavynnemarianne13-alt/Java-OOP-Practice/blob/main/README.pt-br.md)*
 
 A collection of Java exercises built while studying Object-Oriented Programming fundamentals, as part of a structured 24-month learning path toward a DevSecOps / Cloud Security Engineer role in the international job market.
 
