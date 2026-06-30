@@ -43,14 +43,6 @@ public class Wizard {
         }
     }
 
-    public void restoreMana(int amount) {
-        if (amount > 0) {
-            mana += amount;
-        } else {
-            System.out.println("Only numbers greater than zero are acceptable!");
-        }
-    }
-
     public String toString() {
         String situation = (life == 0.0) ? " - defeated" : "";
         return name
