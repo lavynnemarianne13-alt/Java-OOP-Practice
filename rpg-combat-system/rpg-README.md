@@ -1,5 +1,7 @@
 # RPG Combat System
 
+*[Leia em português/Read in Portuguese](https://github.com/lavynnemarianne13-alt/Java-OOP-Practice/edit/main/rpg-combat-system/rpg-README.pt-br.md)*
+
 A turn-based combat simulator built in Java to practice core Object-Oriented Programming principles: constructors, encapsulation, and collaboration between objects of the same class.
 
 This project is part of a structured Java/OOP study path, focused on applying concepts to realistic business-rule scenarios rather than isolated syntax exercises.
@@ -21,14 +23,13 @@ When a wizard casts a spell, the elemental matchup determines whether the spell 
 - **Defensive programming / business rules**:
   - A spell costs 10 mana. If the caster doesn't have enough mana, the spell fails silently — no mana is spent and no damage is dealt.
   - A wizard's life can never go below zero, regardless of how much damage is dealt.
-  - `restoreMana` only accepts positive values; zero or negative amounts are rejected.
 - **Control flow** — the combat loop uses `for` to iterate turns (with an early exit via `break` once a wizard is defeated), `if/else` to alternate which wizard attacks, and `while` to validate user input for the mana-restore step.
 
 ## Class Diagram
 
 ```
 ┌─────────────────────────────────────┐
-│              Wizard                  │
+│              Wizard                 │
 ├─────────────────────────────────────┤
 │ - name : String                     │
 │ - element : String                  │
@@ -63,7 +64,6 @@ Name: Gandalf
 Element: EARTH
 Mana: 50
 Damage: 15
-
 
 How many turns? 3
 
