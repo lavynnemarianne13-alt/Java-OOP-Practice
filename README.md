@@ -1,4 +1,6 @@
-# Java OOP Practice — Path to DevSecOps
+# Java OOP Practice 
+
+*[Read in Portuguese](./README.pt-br.md)*
 
 A collection of Java exercises built while studying Object-Oriented Programming fundamentals, as part of a structured 24-month learning path toward a DevSecOps / Cloud Security Engineer role in the international job market.
 
@@ -8,8 +10,8 @@ Each project applies OOP concepts to a small but realistic domain — favoring b
 
 | Project | Concepts | Description |
 |---|---|---|
-| [RPG Combat System](./rpg-combat-system) | Encapsulation, object collaboration, control flow (`for`, `if/else`, `while`) | Turn-based duel between two wizards, with elemental damage multipliers and mana management |
-| [Bank Account System](./bank-account-system) | Constructor overloading, `this`, immutability (`final`), encapsulation | Console banking app supporting deposits, withdrawals, and transfers with fee rules |
+| [RPG Combat System](https://github.com/lavynnemarianne13-alt/Java-OOP-Practice/tree/main/rpg-combat-system) | Encapsulation, object collaboration, control flow (`for`, `if/else`, `while`) | Turn-based duel between two wizards, with elemental damage multipliers and mana management |
+| [Bank Account System](https://github.com/lavynnemarianne13-alt/Java-OOP-Practice/tree/main/bank-account-system) | Constructor overloading, `this`, immutability (`final`), encapsulation | Console banking app supporting deposits, withdrawals, and transfers with fee rules |
 
 *(More projects will be added as the study path progresses — see roadmap below.)*
 
@@ -37,8 +39,3 @@ See each project's own README for the exact class name and a sample run.
 
 I'm a Software Engineering student transitioning toward DevSecOps and Cloud Security, building a foundation in Java before moving into Linux, Docker, CI/CD, and security-focused tooling. This repository tracks the early, foundational part of that path — the rest of the roadmap (cloud platforms, containerization, security certifications) is being built in parallel and will surface in future repositories.
 
-## Roadmap (upcoming additions)
-
-- [ ] Employee management system (List, encapsulated salary increase logic)
-- [ ] Inventory / product catalog system (arrays vs. lists comparison)
-- [ ] Refactor exercises with JUnit test coverage
