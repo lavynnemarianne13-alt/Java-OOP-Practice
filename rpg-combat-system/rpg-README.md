@@ -64,7 +64,6 @@ Element: EARTH
 Mana: 50
 Damage: 15
 
-Restore mana for Merlin? Enter amount (0 to skip): 0
 
 How many turns? 3
 
