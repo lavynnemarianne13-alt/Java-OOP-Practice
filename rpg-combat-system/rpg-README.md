@@ -94,8 +94,6 @@ rpg-combat-system/
 └── Wizard.java     # domain class — encapsulates all combat rules
 ```
 
-## Possible Improvements
-
 - Extract elemental matchup logic into an `enum` with a dedicated method, instead of chained `if/else` comparisons.
 - Add unit tests (JUnit) covering edge cases: insufficient mana, life clamping at zero, same-element matchups.
 - Support more than two combatants.
